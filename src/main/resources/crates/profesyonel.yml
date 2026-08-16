@@ -1,0 +1,100 @@
+# ============================
+#  PROFESYONEL KASASI - orta-ust duzey iyi seyler
+# ============================
+# Bworld'den daha erisilebilir ama yine de tatmin edici oduller.
+# Enchant seviyeleri burada vanilla siniri asilmiyor (Keskinlik 5 gibi),
+# gercek "elit" oduller Bworld Kasasinda.
+
+id: profesyonel
+name: "&5&lProfesyonel Kasasi"
+description:
+  - "&7Orta-ust duzey kaliteli oduller"
+
+animation: CSGO
+
+key-item: TRIPWIRE_HOOK
+key-item-model: cratesystem:profesyonel_key
+key-name: "&5&lProfesyonel Kasasi Anahtari"
+key-lore:
+  - "&7Iyi odullerin kasasi"
+
+preview-item: DIAMOND_BLOCK
+broadcast-rare: true
+rare-chance-threshold: 3.0
+
+items:
+  - id: iron
+    material: IRON_INGOT
+    amount: 10
+    name: "&f10x Demir Kupuru"
+    chance: 25.0
+    commands: []
+
+  - id: diamond
+    material: DIAMOND
+    amount: 5
+    name: "&b5x Elmas"
+    chance: 20.0
+    commands: []
+
+  - id: sharp_sword
+    material: DIAMOND_SWORD
+    amount: 1
+    name: "&bKeskinlik 5 Elmas Kilic"
+    chance: 15.0
+    glow: true
+    enchants:
+      - "SHARPNESS:5"
+      - "UNBREAKING:3"
+    commands: []
+
+  - id: eff_pickaxe
+    material: DIAMOND_PICKAXE
+    amount: 1
+    name: "&bVerimlilik 5 Elmas Kazma"
+    chance: 15.0
+    glow: true
+    enchants:
+      - "EFFICIENCY:5"
+      - "UNBREAKING:3"
+    commands: []
+
+  - id: chestplate
+    material: DIAMOND_CHESTPLATE
+    amount: 1
+    name: "&bKoruma 4 Elmas Gogusluk"
+    chance: 12.0
+    glow: true
+    enchants:
+      - "PROTECTION:4"
+      - "UNBREAKING:3"
+    commands: []
+
+  - id: netherite_scrap
+    material: NETHERITE_SCRAP
+    amount: 2
+    name: "&82x Netherite Parcasi"
+    chance: 8.0
+    commands: []
+
+  - id: totem
+    material: TOTEM_OF_UNDYING
+    amount: 1
+    name: "&e&lOlumsuzluk Totemi"
+    lore:
+      - "&7Nadir bir odul!"
+    chance: 4.0
+    glow: true
+    commands:
+      - "broadcast &5%player% Profesyonel Kasadan Olumsuzluk Totemi kazandi!"
+
+  - id: netherstar
+    material: NETHER_STAR
+    amount: 1
+    name: "&d&lNether Yildizi"
+    lore:
+      - "&7Cok nadir bir odul!"
+    chance: 1.0
+    glow: true
+    commands:
+      - "broadcast &5%player% Profesyonel Kasadan Nether Yildizi kazandi!"

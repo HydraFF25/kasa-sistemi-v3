@@ -1,0 +1,68 @@
+# ============================
+#  OY (VOTE) KASASI - basit gunluk kasa
+# ============================
+# NOT: "Oy verince 2x versin" istegini kendi oylama eklentin (VotingPlugin,
+# Votifier vb.) uzerinden hallediyorsun. O eklentinin "odul komutlari"
+# kismina asagidaki komutu yazman yeterli, boylece her oyda 2 anahtar verilir:
+#   crate give %player% vote 2
+# Bizim tarafta ekstra bir sey yapmana gerek yok.
+
+id: vote
+name: "&a&lOy Kasasi"
+description:
+  - "&7Sunucuya oy verince kazanilir"
+
+animation: CHEST
+
+key-item: TRIPWIRE_HOOK
+key-item-model: cratesystem:vote_key
+key-name: "&a&lOy Kasasi Anahtari"
+key-lore:
+  - "&7/vote yaparak kazanabilirsin"
+
+preview-item: PAPER
+broadcast-rare: false
+rare-chance-threshold: 2.0
+
+items:
+  - id: bread
+    material: BREAD
+    amount: 8
+    name: "&e8x Ekmek"
+    chance: 30.0
+    commands: []
+
+  - id: xpbottle
+    material: EXPERIENCE_BOTTLE
+    amount: 5
+    name: "&a5x Tecrube Sisesi"
+    chance: 25.0
+    commands: []
+
+  - id: iron
+    material: IRON_INGOT
+    amount: 4
+    name: "&f4x Demir Kupuru"
+    chance: 20.0
+    commands: []
+
+  - id: gold
+    material: GOLD_INGOT
+    amount: 3
+    name: "&63x Altin Kupuru"
+    chance: 15.0
+    commands: []
+
+  - id: diamond
+    material: DIAMOND
+    amount: 1
+    name: "&b1x Elmas"
+    chance: 8.0
+    commands: []
+
+  - id: emerald
+    material: EMERALD
+    amount: 2
+    name: "&a2x Zumrut"
+    chance: 2.0
+    commands: []

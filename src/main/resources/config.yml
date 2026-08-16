@@ -1,0 +1,21 @@
+# CrateSystem - Genel Ayarlar
+# Kasa tanimlari icin plugins/CrateSystem/crates/ klasorune bakiniz.
+# Her kasa kendi .yml dosyasinda tanimlanir, ornek: crates/example.yml
+
+settings:
+  debug: false
+
+# ==============================================
+#  OY (VOTE) SISTEMI - NuVotifier entegrasyonu
+# ==============================================
+# NuVotifier sunucunda kuruluysa, oy siteleri uzerinden gelen her oyda
+# asagida belirtilen kasadan otomatik anahtar verilir.
+# Kurulum rehberi icin README.md dosyasina bakabilirsin.
+vote-crate:
+  enabled: true
+  # Hangi kasadan anahtar verilecek (crates/ klasorundeki dosya id'si)
+  crate: vote
+  # Her oyda kac anahtar verilsin (ornek: 2 yazarsan her oyda 2x anahtar verilir)
+  amount-per-vote: 1
+  # Oy geldiginde sunucuya duyuru yapilsin mi?
+  broadcast: true

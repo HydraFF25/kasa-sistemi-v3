@@ -1,0 +1,66 @@
+# ============================
+#  SANS KASASI - gunluk odul / etkinliklerde dagitilir, az-orta seviye
+# ============================
+id: sans
+name: "&d&lSans Kasasi"
+description:
+  - "&7Gunluk odul ve etkinliklerde dagitilir"
+
+animation: CSGO
+
+key-item: TRIPWIRE_HOOK
+key-item-model: cratesystem:sans_key
+key-name: "&d&lSans Kasasi Anahtari"
+key-lore:
+  - "&7Etkinliklerde kazanabilirsin"
+
+preview-item: RABBIT_FOOT
+broadcast-rare: true
+rare-chance-threshold: 3.0
+
+items:
+  - id: nugget
+    material: GOLD_NUGGET
+    amount: 12
+    name: "&e12x Altin Parcasi"
+    chance: 30.0
+    commands: []
+
+  - id: rabbitfoot
+    material: RABBIT_FOOT
+    amount: 1
+    name: "&d1x Sans Tilsimi"
+    chance: 22.0
+    commands: []
+
+  - id: goldapple
+    material: GOLDEN_APPLE
+    amount: 2
+    name: "&62x Altin Elma"
+    chance: 20.0
+    commands: []
+
+  - id: iron
+    material: IRON_INGOT
+    amount: 8
+    name: "&f8x Demir Kupuru"
+    chance: 15.0
+    commands: []
+
+  - id: diamond
+    material: DIAMOND
+    amount: 2
+    name: "&b2x Elmas"
+    chance: 10.0
+    commands: []
+
+  - id: enchantedapple
+    material: ENCHANTED_GOLDEN_APPLE
+    amount: 1
+    name: "&d&lTanrisal Elma"
+    lore:
+      - "&7Cok nadir bir odul!"
+    chance: 3.0
+    glow: true
+    commands:
+      - "broadcast &d%player% Sans Kasasindan Tanrisal Elma kazandi!"

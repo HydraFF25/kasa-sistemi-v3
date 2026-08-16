@@ -1,0 +1,72 @@
+# ============================
+#  SPAWNER KASASI - belli basli spawnerlar (her mob degil)
+# ============================
+# NOT: Spawner odulleri artik komutla degil, DOGRUDAN ITEM olarak veriliyor.
+# "spawner-entity" alanina yazdigin mob, itemin icine gomulur - envantere
+# eklendiginde spawner zaten o mobu spawn edecek sekilde hazir gelir.
+# Bu yuzden hicbir komuta / eklentiye ihtiyac yoktur, %100 calisir.
+
+id: spawner
+name: "&8&lSpawner Kasasi"
+description:
+  - "&7Belli basli spawnerlar kazanma sansi!"
+
+animation: ROULETTE
+
+key-item: TRIPWIRE_HOOK
+key-item-model: cratesystem:spawner_key
+key-name: "&8&lSpawner Kasasi Anahtari"
+key-lore:
+  - "&7Bu anahtar ile spawner kazanabilirsin"
+
+preview-item: SPAWNER
+broadcast-rare: true
+rare-chance-threshold: 3.0
+
+items:
+  - id: zombie_spawner
+    material: SPAWNER
+    amount: 1
+    name: "&7Zombi Spawner"
+    spawner-entity: ZOMBIE
+    chance: 40.0
+    commands: []
+
+  - id: skeleton_spawner
+    material: SPAWNER
+    amount: 1
+    name: "&fIskelet Spawner"
+    spawner-entity: SKELETON
+    chance: 32.0
+    commands: []
+
+  - id: spider_spawner
+    material: SPAWNER
+    amount: 1
+    name: "&8Orumcek Spawner"
+    spawner-entity: SPIDER
+    chance: 18.0
+    commands: []
+
+  - id: iron_golem_spawner
+    material: SPAWNER
+    amount: 1
+    name: "&fDemir Golem Spawner"
+    lore:
+      - "&7Nadir bir spawner!"
+    spawner-entity: IRON_GOLEM
+    chance: 7.0
+    glow: true
+    commands: []
+
+  - id: blaze_spawner
+    material: SPAWNER
+    amount: 1
+    name: "&6&lBlaze Spawner"
+    lore:
+      - "&7EN NADIR spawner!"
+    spawner-entity: BLAZE
+    chance: 3.0
+    glow: true
+    commands:
+      - "broadcast &6%player% Spawner Kasasindan Blaze Spawner kazandi!"

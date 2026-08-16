@@ -1,0 +1,154 @@
+# ============================
+#  BWORLD KASASI - SUNUCUNUN EN EFSANE KASASI
+# ============================
+# Keskinlik 6 kilic/balta, Verimlilik 6 kazma, P5 (Koruma 5) tam netherite
+# set ve ozel bir Elytra. Vanilla'da bu seviyeler normalde imkansizdir,
+# ama sistemimiz "enchants" alaniyla seviye sinirini yok sayar.
+#
+# Enchant yazim formati -> "ENCHANT_ADI:SEVIYE"
+# Ornek: SHARPNESS:6, EFFICIENCY:6, PROTECTION:5
+#
+# Bu kasa efsanevi oldugu icin ici doldurma (basit) esya icermez,
+# hepsi ust duzey oduldur - anahtari bulmak zaten zor olmali.
+
+id: bworld
+name: "&4&lBworld Kasasi"
+description:
+  - "&7Sunucunun en efsane kasasi!"
+  - "&7Sadece en iyi oduller cikar."
+
+animation: CSGO
+
+key-item: TRIPWIRE_HOOK
+key-item-model: cratesystem:bworld_key
+key-glow: true
+key-name: "&4&l&kA&r&4&lBworld Kasasi Anahtari&r&4&l&kA"
+key-lore:
+  - "&7Efsanevi kasa anahtari"
+  - "&7Cok nadir bulunur!"
+
+preview-item: NETHERITE_CHESTPLATE
+# NOT: Duyurular her odul icin "commands" alaninda ayri ayri yazildigi
+# icin genel broadcast-rare kapali - yoksa mesaj iki kere gider.
+broadcast-rare: false
+rare-chance-threshold: 0.0
+
+items:
+  - id: sharp_sword
+    material: NETHERITE_SWORD
+    amount: 1
+    name: "&c&lKeskinlik 6 Kilic"
+    lore:
+      - "&7Efsanevi bir silah!"
+    chance: 15.0
+    glow: true
+    unbreakable: true
+    enchants:
+      - "SHARPNESS:6"
+      - "UNBREAKING:3"
+      - "MENDING:1"
+    commands:
+      - "broadcast &4%player% Bworld Kasasindan Keskinlik 6 Kilic kazandi!"
+
+  - id: sharp_axe
+    material: NETHERITE_AXE
+    amount: 1
+    name: "&c&lKeskinlik 6 Balta"
+    lore:
+      - "&7Efsanevi bir silah!"
+    chance: 15.0
+    glow: true
+    unbreakable: true
+    enchants:
+      - "SHARPNESS:6"
+      - "UNBREAKING:3"
+      - "MENDING:1"
+    commands:
+      - "broadcast &4%player% Bworld Kasasindan Keskinlik 6 Balta kazandi!"
+
+  - id: eff_pickaxe
+    material: NETHERITE_PICKAXE
+    amount: 1
+    name: "&e&lVerimlilik 6 Kazma"
+    lore:
+      - "&7Efsanevi bir alet!"
+    chance: 15.0
+    glow: true
+    unbreakable: true
+    enchants:
+      - "EFFICIENCY:6"
+      - "UNBREAKING:3"
+      - "FORTUNE:3"
+      - "MENDING:1"
+    commands:
+      - "broadcast &4%player% Bworld Kasasindan Verimlilik 6 Kazma kazandi!"
+
+  - id: p5_helmet
+    material: NETHERITE_HELMET
+    amount: 1
+    name: "&b&lP5 Netherite Baslik"
+    chance: 12.0
+    glow: true
+    unbreakable: true
+    enchants:
+      - "PROTECTION:5"
+      - "UNBREAKING:3"
+      - "MENDING:1"
+    commands: []
+
+  - id: p5_chestplate
+    material: NETHERITE_CHESTPLATE
+    amount: 1
+    name: "&b&lP5 Netherite Gogusluk"
+    chance: 10.0
+    glow: true
+    unbreakable: true
+    enchants:
+      - "PROTECTION:5"
+      - "UNBREAKING:3"
+      - "MENDING:1"
+    commands:
+      - "broadcast &4%player% Bworld Kasasindan P5 Netherite Gogusluk kazandi!"
+
+  - id: p5_leggings
+    material: NETHERITE_LEGGINGS
+    amount: 1
+    name: "&b&lP5 Netherite Pantolon"
+    chance: 11.0
+    glow: true
+    unbreakable: true
+    enchants:
+      - "PROTECTION:5"
+      - "UNBREAKING:3"
+      - "MENDING:1"
+    commands: []
+
+  - id: p5_boots
+    material: NETHERITE_BOOTS
+    amount: 1
+    name: "&b&lP5 Netherite Bot"
+    chance: 12.0
+    glow: true
+    unbreakable: true
+    enchants:
+      - "PROTECTION:5"
+      - "UNBREAKING:3"
+      - "FEATHER_FALLING:4"
+      - "MENDING:1"
+    commands: []
+
+  - id: special_elytra
+    material: ELYTRA
+    amount: 1
+    name: "&d&l&kA&r &d&lOzel Elytra&r &d&l&kA"
+    lore:
+      - "&7Kirilmaz ve dayanikli!"
+      - "&7Bworld Kasasinin en buyuk odulu!"
+    chance: 10.0
+    glow: true
+    unbreakable: true
+    enchants:
+      - "UNBREAKING:3"
+      - "MENDING:1"
+    commands:
+      - "broadcast &d&l★ %player% Bworld Kasasindan OZEL ELYTRA kazandi! ★"

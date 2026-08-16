@@ -1,0 +1,16 @@
+name: CrateSystem
+version: '1.0.0'
+main: com.cratesystem.CratePlugin
+api-version: '1.21'
+author: Haci
+description: CSGO/Rulet/Sandik animasyonlu profesyonel kasa (crate) sistemi
+commands:
+  crate:
+    description: Kasa sistemi ana komutu
+    usage: /crate
+    aliases: [crates, kasa]
+softdepend: [NuVotifier, Votifier, Vault]
+permissions:
+  cratesystem.admin:
+    description: Tum admin komutlarina erisim (reload, give, setlocation, forceopen)
+    default: op

@@ -1,0 +1,92 @@
+# ============================
+#  AMETIST KASASI - kumar tadinda, buyuk varyans
+# ============================
+# Cogu zaman sade seyler (16 demir gibi) cikar, ama kucuk bir ihtimalle
+# P6 (Koruma 6) Netherite Gogusluk gibi devasa bir odul de cikabilir.
+# Bu yuzden chance degerleri arasindaki fark bilerek cok buyuk tutuldu.
+
+id: ametist
+name: "&5&lAmetist Kasasi"
+description:
+  - "&7Kumarbazlarin kasasi... sansini dene!"
+
+animation: ROULETTE
+
+key-item: TRIPWIRE_HOOK
+key-item-model: cratesystem:ametist_key
+key-glow: true
+key-name: "&5&lAmetist Kasasi Anahtari"
+key-lore:
+  - "&7Buyuk odul icin sansini dene!"
+
+preview-item: AMETHYST_CLUSTER
+broadcast-rare: true
+rare-chance-threshold: 3.0
+
+items:
+  - id: iron16
+    material: IRON_INGOT
+    amount: 16
+    name: "&f16x Demir Kupuru"
+    chance: 30.0
+    commands: []
+
+  - id: shard
+    material: AMETHYST_SHARD
+    amount: 8
+    name: "&d8x Ametist Parcasi"
+    chance: 20.0
+    commands: []
+
+  - id: block
+    material: AMETHYST_BLOCK
+    amount: 4
+    name: "&d4x Ametist Blogu"
+    chance: 15.0
+    commands: []
+
+  - id: goldblock
+    material: GOLD_BLOCK
+    amount: 2
+    name: "&62x Altin Blogu"
+    chance: 10.0
+    commands: []
+
+  - id: diamond
+    material: DIAMOND
+    amount: 3
+    name: "&b3x Elmas"
+    chance: 10.0
+    commands: []
+
+  - id: emeraldblock
+    material: EMERALD_BLOCK
+    amount: 1
+    name: "&aZumrut Blogu"
+    chance: 8.0
+    commands: []
+
+  - id: netherite_scrap
+    material: NETHERITE_SCRAP
+    amount: 1
+    name: "&8Netherite Parcasi"
+    chance: 4.0
+    glow: true
+    commands: []
+
+  - id: p6_chestplate
+    material: NETHERITE_CHESTPLATE
+    amount: 1
+    name: "&5&l★ P6 NETHERITE GOGUSLUK ★"
+    lore:
+      - "&7INANILMAZ bir odul!"
+      - "&7Kumarin karsiligini aldin!"
+    chance: 3.0
+    glow: true
+    unbreakable: true
+    enchants:
+      - "PROTECTION:6"
+      - "UNBREAKING:3"
+      - "MENDING:1"
+    commands:
+      - "broadcast &5&l★ %player% Ametist Kasasindan P6 Netherite Gogusluk kazandi! ★"

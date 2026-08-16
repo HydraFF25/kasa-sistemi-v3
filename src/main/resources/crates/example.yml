@@ -1,0 +1,95 @@
+# ==========================================================
+#  ORNEK KASA - istediğin kadar .yml dosyasi ekleyebilirsin
+#  Her dosya bu klasorde ayri bir kasa demektir.
+# ==========================================================
+
+id: example
+name: "&6&lOrnek Kasa"
+description:
+  - "&7Harika oduller icerir!"
+
+# Animasyon tipi: CHEST | CSGO | ROULETTE
+animation: CSGO
+
+# Fiziksel kasa acildiginda / komutla verilen anahtar itemi
+key-item: TRIPWIRE_HOOK
+key-name: "&6&lOrnek Kasa Anahtari"
+key-lore:
+  - "&7Bu anahtar ile"
+  - "&7&6Ornek Kasa&7'yi acabilirsin."
+
+preview-item: CHEST
+
+# Nadir odul kazanildiginda sunucuya duyuru yapsin mi?
+broadcast-rare: true
+# chance degeri bu esikten kucuk/esitse nadir sayilir
+rare-chance-threshold: 5.0
+
+items:
+  - id: dirt
+    material: DIRT
+    amount: 5
+    name: "&7Biraz Toprak"
+    lore:
+      - "&8Sanslisin... ya da degil."
+    chance: 40.0
+    commands: []
+
+  - id: iron
+    material: IRON_INGOT
+    amount: 8
+    name: "&f8x Demir Kupuru"
+    chance: 25.0
+    commands: []
+
+  - id: diamonds
+    material: DIAMOND
+    amount: 5
+    name: "&b5x Elmas"
+    lore:
+      - "&7Guzel bir odul!"
+    chance: 15.0
+    commands: []
+
+  - id: emeralds
+    material: EMERALD
+    amount: 10
+    name: "&a10x Zumrut"
+    chance: 10.0
+    commands: []
+
+  - id: netherite
+    material: NETHERITE_INGOT
+    amount: 1
+    name: "&5&lNetherite Kupuru"
+    lore:
+      - "&7Cok nadir bir odul!"
+    chance: 3.0
+    glow: true
+    commands:
+      - "give %player% netherite_ingot 1"
+
+  - id: moneybag
+    material: SUNFLOWER
+    amount: 1
+    name: "&6&l5.000 Para"
+    lore:
+      - "&7Bakiyene eklendi."
+    chance: 5.0
+    glow: true
+    display-only: true
+    commands:
+      - "eco give %player% 5000"
+
+  - id: legendary
+    material: NETHER_STAR
+    amount: 1
+    name: "&d&lEFSANEVI ODUL"
+    lore:
+      - "&7Cok ama cok nadir!"
+      - "&7Tebrikler!"
+    chance: 1.0
+    glow: true
+    commands:
+      - "give %player% nether_star 1"
+      - "broadcast &d%player% EFSANEVI bir odul kazandi!"
